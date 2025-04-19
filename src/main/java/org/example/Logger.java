@@ -1,9 +1,7 @@
 package org.example;
 
 import org.example.handler.*;
-
 public class Logger {
-
     private final LoggerConfig config;
     private final LogHandler handlerChain;
 

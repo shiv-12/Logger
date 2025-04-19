@@ -18,4 +18,7 @@ public class LogMessage {
     }
 
     public LogLevel getLevel() { return level; }
+    public String getNamespace() { return namespace; }
+    public String getContent() { return content; }
+    public String getTimestamp() { return timestamp; }
 }

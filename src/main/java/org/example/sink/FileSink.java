@@ -11,17 +11,15 @@ import java.util.Set;
 import java.util.zip.GZIPOutputStream;
 
 public class FileSink implements Sink {
-
     private final Set<LogLevel> supportedLevels;
     private final String filePath;
-    private final long maxSizeInBytes = 1024 ; // 1KB for demo
+    private final long maxSizeInBytes = 1024; // 1KB for demo
     private final String timestampFormat;
 
     public FileSink(Set<LogLevel> levels, String filePath, String timestampFormat) {
         this.supportedLevels = levels;
-        this.timestampFormat = timestampFormat;
-
         this.filePath = filePath;
+        this.timestampFormat = timestampFormat;
         new File(filePath).getParentFile().mkdirs();
     }
 
@@ -75,5 +73,4 @@ public class FileSink implements Sink {
     public String getTimestampFormat() {
         return timestampFormat;
     }
-
 }

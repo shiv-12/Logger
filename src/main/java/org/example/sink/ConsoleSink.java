@@ -6,7 +6,6 @@ import org.example.LogMessage;
 import java.util.Set;
 
 public class ConsoleSink implements Sink {
-
     private final Set<LogLevel> supportedLevels;
     private final String timestampFormat;
 

@@ -5,8 +5,6 @@ import org.example.LogMessage;
 
 public interface Sink {
     void publish(LogMessage message);
-
     boolean supports(LogLevel level);
-
     String getTimestampFormat();
 }
