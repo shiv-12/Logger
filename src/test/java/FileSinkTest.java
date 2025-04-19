@@ -18,7 +18,7 @@ class FileSinkTest {
 
     @BeforeEach
     void setUp() {
-        fileSink = mock(FileSink.class);  // Mock the FileSink
+        fileSink = mock(FileSink.class);
         Set<LogLevel> levels = EnumSet.of(LogLevel.INFO);
         fileSink = new FileSink(levels, "logs/app.log", "dd-MM-yyyy HH:mm:ss");
         message = new LogMessage("OrderService", "Order created successfully", LogLevel.INFO, "2022-06-27 11:14:44,942");

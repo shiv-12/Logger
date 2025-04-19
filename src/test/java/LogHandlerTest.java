@@ -21,6 +21,5 @@ class LogHandlerTest {
 
         LogMessage message = new LogMessage("OrderService", "Test debug message", LogLevel.DEBUG, "2022-06-27 11:14:44,942");
         debugHandler.handle(LogLevel.DEBUG, "OrderService", "Test debug message", null);
-        // You would verify that the correct handler (DebugHandler in this case) processed the message.
     }
 }

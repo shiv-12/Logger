@@ -27,7 +27,7 @@ class LoggerTest {
         logger.log(LogLevel.INFO, "OrderService", "Order created successfully");
         logger.log(LogLevel.ERROR, "PaymentService", "Payment failed");
 
-        verify(fileSink, times(1)).publish(any(LogMessage.class));  // Ensure fileSink was called for INFO
-        verify(consoleSink, times(1)).publish(any(LogMessage.class)); // Ensure consoleSink was called for ERROR
+        verify(fileSink, times(1)).publish(any(LogMessage.class));
+        verify(consoleSink, times(1)).publish(any(LogMessage.class));
     }
 }
